@@ -1,0 +1,369 @@
+html{
+    color-scheme: dark;
+}
+
+html, body, header, nav, section, article, div, span, h1, h2, h3, p , ul, li, figure, figcaption, img, frame{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    background: radial-gradient(ellipse at 85% 10%, transparent 30%) #0F1220;
+    color: #E9ECF5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+}
+
+h1, h2, h3, p, figure{
+    margin: 0;    
+}
+
+h1, h2, h3 { 
+    line-height: 1.2;
+}
+
+h1{
+    font-size: clamp(2.5rem, 5.2vw, 4.8rem);
+    font-weight: 750;
+    letter-spacing: -0.05rem;
+}
+
+h2{
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    letter-spacing: -0.025em;
+}
+
+h3{
+    font-size: 1.4rem;
+}
+
+p{
+    color: #E9ECF5;
+
+}
+
+
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a:focus{
+    outline: 3px solid #E9ECF5;
+    outline-offset: 5px;
+}
+
+.container{
+    width: min(76rem, calc(100% - 2rem));
+    margin-inline: auto ;
+}
+
+.site-header{
+    border-bottom: 1px solid #2C3150;
+}
+
+.header-layout{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-block: 1.4rem;
+}
+
+.brand{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.55rem;
+    color: #E9ECF5;
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+}
+
+.brand-subtitle{
+    flex-basis: 100%;
+    color: #E9ECF5;
+    font-size: 1.2rem;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    gap: 0.5rem;         
+    margin: 0;
+    padding: 0;
+    list-style: none;}
+
+.nav-list a{
+    display: block;
+    padding: 0.65rem 0.85rem;
+    border-radius: 0.5rem;
+    color: #E9ECF5;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.nav-list a:hover{
+    color:#E9ECF5;
+    background-color: #B06CFF;
+}
+
+.nav-list .activo{
+    background: #7C5CFF;
+    color: #E9ECF5;
+}
+
+.skip-link{
+    position: absolute;
+    top: 0.5em;
+    left: 1rem;
+    transform: translateY(-180%);
+    background: #E9ECF5;
+    color: #101111;
+    padding: 0.75rem;
+    z-index: 10;
+}
+
+.skip-link:focus{
+    transform: translateY(0);
+}
+
+.section{
+    padding-block: clamp(2.5rem, 6vw, 5rem);
+}
+.section-heading{
+    max-width: 42rem;
+    margin-bottom: 2rem;
+}
+
+.lead{
+    font-size: 1.1rem;
+    max-width: 42rem;
+    margin-top: 1.5rem;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding-block: clamp(3rem, 7vw, 6rem);
+    align-items: center;
+}
+
+.hero-copy , hero-image{
+    flex:1;
+    min-width: 0;
+}
+
+.hero-image img{
+    border: 1px solid #171A2B;
+    border-radius: 1.25rem;
+}
+
+.actions{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.button{
+    display: inline-flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 0.85rem 1.3rem;
+    border-radius: 0.6rem;
+    background: #7C5CFF;
+    color: #E9ECF5;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.button:hover{
+    background: #B06CFF;
+    color: #E9ECF5;
+}
+
+.card{
+    flex: 1 1 18rem;
+    min-width: 0;
+    padding: 1.5rem;
+    border: 1px solid #2C3150;
+    border-radius: 1.25rem;
+    background: #1E2236;
+}
+
+.card-number{
+    display: block;
+    font-size: 0.7rem;
+    color:#E9ECF5;
+    letter-spacing: 0.12rem;
+    margin-bottom: 1.5rem;
+}
+
+.card h2{
+    font-size: 1.2rem;
+}
+
+.card p{
+    margin-block: 1rem 1.5rem;
+}
+
+.grid-principios , .grid-heuristicas , .fundamentos-lista{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem; 
+    margin-bottom: 4rem;
+}
+
+.site-footer{
+    border-top: 1px solid #2C3150;
+    font-size: 0.8rem;
+}
+
+.footer-layout{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-block: 1.8rem;
+}
+
+.page-intro {
+    margin-bottom: 3.5rem; 
+    padding-bottom: 1.5rem; 
+}
+
+.eyebrow{
+    margin-top: 2rem;
+}
+
+.image-body img{
+    display: block;
+    margin: 3rem auto; 
+    width: 30%;
+    max-width: 30rem; 
+    text-align: center; 
+    border: 1px solid #171A2B;
+    border-radius: 1.25rem;
+}
+
+.video-section{
+    margin-top: 3rem;
+    max-width: 60rem;
+    margin-inline: auto ;
+    padding-bottom: 4rem;
+}
+
+.video-frame{
+    aspect-ratio: 16 / 9;
+    border: 1px solid #171A2B;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    background: #1b1b1b;
+}
+
+.video-frame iframe{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+@media(min-width:52rem){
+    .hero{
+        flex-direction: row;
+        gap: 3rem;
+    }
+}
+
+@media(max-width:24rem){
+    .nav-list a{
+        padding-inline: 0.65rem;
+    }
+    .card{
+        padding: 1.25rem;
+    }
+}
+
+/* ---------- Modo claro (solo sobrescribe lo necesario) ---------- */
+html[data-theme="light"]{
+    color-scheme: light;
+}
+html[data-theme="light"] body{
+    background: #F6F7FB;
+    color: #1B1F33;
+}
+html[data-theme="light"] h1,
+html[data-theme="light"] h2,
+html[data-theme="light"] h3,
+html[data-theme="light"] p,
+html[data-theme="light"] .brand,
+html[data-theme="light"] .brand-subtitle,
+html[data-theme="light"] .nav-list a,
+html[data-theme="light"] .nav-list a:hover,
+html[data-theme="light"] .nav-list .activo,
+html[data-theme="light"] .button{
+    color: #1B1F33;
+}
+html[data-theme="light"] .site-header,
+html[data-theme="light"] .site-footer{
+    border-color: #D8DCEA;
+}
+html[data-theme="light"] .card{
+    background: #FFFFFF;
+    border-color: #D8DCEA;
+}
+html[data-theme="light"] .video-frame{
+    background: #E9ECF5;
+    border-color: #D8DCEA;
+}
+html[data-theme="light"] .hero-image img,
+html[data-theme="light"] .image-body img{
+    border-color: #D8DCEA;
+}
+html[data-theme="light"] .skip-link{
+    background: #1B1F33;
+    color: #F6F7FB;
+}
+
+/* ---------- Botón de tema ---------- */
+.theme-toggle{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    border: 1px solid #2C3150;
+    border-radius: 0.5rem;
+    background: transparent;
+    color: #E9ECF5;
+    font-size: 1.1rem;
+    line-height: 1;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+.theme-toggle:hover{
+    background: #B06CFF;
+    border-color: #B06CFF;
+}
+html[data-theme="light"] .theme-toggle{
+    border-color: #D8DCEA;
+    color: #1B1F33;
+}
+html[data-theme="light"] .theme-toggle:hover{
+    background: #7C5CFF;
+    border-color: #7C5CFF;
+    color: #FFFFFF;
+}
