@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI | Parcial 2 - Victor Rivera</title>
+    <script>(function(){var t=localStorage.getItem('tema');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+
+<body>
+     <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+        <div class="container header-layout">
+            <a class="brand" href="index.html">Diseño de Experiencia de Usuario e Interfaces (UX/UI)<span class="brand-subtitle">Experiencias de calidad e interfaces que se entienden</span></a>
+            <nav aria-label="Navegación principal">
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="ui.html" class="activo" aria-current="page">Diseño de Interfaz de Usuario</a></li>
+                    <li><a href="ux.html">Diseño de Experiencia de Usuario</a></li>
+                    <li><a href="guia.html">Guía en UX/UI</a></li>                 
+                    <li><a href="sobreMi.html">Sobre Mi</a></li>
+                    <li><button type="button" class="theme-toggle" aria-label="Cambiar modo de color" aria-pressed="false" title="Cambiar modo de color">☀️</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main id="contenido" class="container" tabindex="-1">
+        <section class="page-intro" aria-labelledby="info-title"><p class="eyebrow">Fundamentos del</p><h1 id="info-title">Diseño de Interfaz de Usuario</h1></section>
+        <h2>¿Que es el Diseño de Interfaz de Usuario?</h2>
+        <p>El diseño de interfaz de usuario es responsable de la apariencia, la interactividad, la usabilidad, el comportamiento y la sensación general de un producto. El diseño de UI puede determinar si un usuario tiene una experiencia positiva con un producto, por lo que es esencial que las empresas y los creadores se familiaricen con las mejores prácticas de diseño UI.</p>
+        <figure class="image-body">
+            <img src="img/ImagenUI.jpg" width="604" height="340" alt="Ejemplo de versiones de una interfaz">
+        </figure>
+        <h2>Los 8 principios de Shneiderman</h2>
+        <p>Publicados en 1986 por Ben Shneiderman, estos principios son usados de referencia para la construcciones de interfaces de claras para el usuario.</p>
+
+        
+    <div class="grid-principios">
+
+        <article class="card">
+        <h3>1. Consistencia</h3>
+        <p>Los mismos elementos deben comportarse igual en toda la interfaz.</p>
+        <p class="ejemplo"><strong>Ejemplo UI:</strong> todos los botones primarios comparten color, radio y padding.</p>
+        </article>
+
+        <article class="card">
+        <h3>2. Atajos para usuarios frecuentes</h3>
+        <p>Ofrecer aceleradores (atajos de teclado, acciones rápidas) sin estorbar a los novatos.</p>
+        <p class="ejemplo"><strong>Ejemplo UI:</strong> <kbd>Ctrl</kbd> + <kbd>S</kbd> para guardar, además del botón.</p>
+        </article>
+
+        <article class="card">
+        <h3>3. Feedback informativo</h3>
+        <p>Toda acción debe tener una respuesta visible e inmediata.</p>
+        <p class="ejemplo"><strong>Ejemplo UI:</strong> un spinner al guardar, un check verde al completar.</p>
+        </article>
+
+        <article class="card">
+        <h3>4. Diálogos que cierran tareas</h3>
+        <p>Dividir procesos largos en pasos claros con inicio y fin.</p>
+        <p class="ejemplo"><strong>Ejemplo UI:</strong> un checkout en 3 pasos con indicador de progreso.</p>
+        </article>
+
+        <article class="card">
+        <h3>5. Prevención de errores</h3>
+        <p>Mejor evitar el error que mostrar un mensaje después.</p>
+        <p class="ejemplo"><strong>Ejemplo UI:</strong> deshabilitar el botón "Enviar" hasta que el formulario sea válido.</p>
+        </article>
+
+        <article class="card">
+        <h3>6. Reversibilidad de acciones</h3>
+        <p>Permitir deshacer o confirmar antes de ejecutar acciones destructivas.</p>
+        <p class="ejemplo"><strong>Ejemplo UI:</strong> "¿Seguro que quieres eliminar?" o un botón "Deshacer" tras borrar.</p>
+        </article>
+
+        <article class="card">
+        <h3>7. Control del usuario</h3>
+        <p>El usuario decide cuándo y cómo avanza; el sistema no le fuerza.</p>
+        <p class="ejemplo"><strong>Ejemplo UI:</strong>  permitir cerrar una ventana modal con la tecla <kbd>Esc</kbd>, haciendo clic fuera de ella o con el botón "X".</p>
+        </article>
+
+        <article class="card">
+        <h3>8. Reducir la carga de memoria</h3>
+        <p>No hacer que el usuario recuerde información entre pantallas.</p>
+        <p class="ejemplo"><strong>Ejemplo UI:</strong> mantener visible el resumen del pedido durante todo el checkout.</p>
+        </article>
+
+  </div>
+
+
+    <h2>Fundamentos Visuales</h2>
+        <p>Los elementos que construyen la capa visual de una interfaz y que deben mantenerse consistentes en todo el producto.</p>
+
+    <div class="fundamentos-lista">
+
+        <article class="fundamento">
+        <h3>Tipografía</h3>
+        <p>
+            La tipografía debe ser facil de comprender antes que verse bonita, usando tamaños, pesos
+            y espacios consistentes en toda la interfaz y respetando criterios de accesibilidad.
+        </p>
+        </article>
+
+        <article class="fundamento">
+        <h3>Color</h3>
+        <p>
+            El color debe usarse con un significado claro y constante (por ejemplo, siempre el mismo para errores o acciones),
+            también a la hora de seleccionar una paleta de colores considera que sea accesible.
+        </p>
+        </article>
+
+        <article class="fundamento">
+        <h3>Espaciado</h3>
+        <p>
+            No es espacio vacío, sino un elemento activo que agrupa, separa y da respiración a la interfaz.
+            Un uso adecuado del espacio en blanco mejora la comprensión y reduce la sensación de saturación .
+        </p>
+        </article>
+
+        <article class="fundamento">
+        <h3>Iconografía e imágenes</h3>
+        <p>
+            Los iconos bien diseñados funcionan como señales visuales rápidas que reducen la necesidad de leer texto. 
+            Las imágenes, por su parte, pueden aportar contexto emocional o funcional.
+        </p>
+        </article>
+    </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-layout"><p>Victor Rivera</p><p>Diseño de UX/UI</p><a href="#contenido">Volver al contenido ↑</a></div>
+    </footer>
+
+<script src="js/tema.js" defer></script>
+
+</body>
+</html>

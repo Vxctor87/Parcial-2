@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX | Parcial 2 - Victor Rivera</title>
+    <script>(function(){var t=localStorage.getItem('tema');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+
+<body>
+     <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+        <div class="container header-layout">
+            <a class="brand" href="index.html">Diseño de Experiencia de Usuario e Interfaces (UX/UI)<span class="brand-subtitle">Experiencias de calidad e interfaces que se entienden</span></a>
+            <nav aria-label="Navegación principal">
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="ui.html">Diseño de Interfaz de Usuario</a></li>
+                    <li><a href="ux.html"  class="activo" aria-current="page">Diseño de Experiencia de Usuario</a></li>
+                    <li><a href="guia.html">Guía en UX/UI</a></li>                 
+                    <li><a href="sobreMi.html">Sobre Mi</a></li>
+                    <li><button type="button" class="theme-toggle" aria-label="Cambiar modo de color" aria-pressed="false" title="Cambiar modo de color">☀️</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main id="contenido" class="container" tabindex="-1">
+        <section class="page-intro" aria-labelledby="info-title"><p class="eyebrow">Fundamentos del</p><h1 id="info-title">Diseño de Experiencia de Usuario</h1></section>
+        <h2>¿Que es el Diseño de Experiencia de Usuario?</h2>
+        <p>El diseño de experiencia de usuario es parte de principios del diseño, la psicología, la ingeniería y
+           los negocios para crear experiencias tanto intuitivas como agradables para el usuario recurriendo a sondeos y
+           a la comprensión de las necesidades de los usuarios.</p>
+        <figure class="image-body">
+                <img src="img/DiagramaUX.jpg" width="604" height="340" alt="Diagrama de UX">
+            </figure>
+        <h2>Las 10 heurísticas de Nielsen</h2>
+        <p>Publicadas en 1994 por Jakob Nielsen, estas heurísticas se usan como guia para la creación y evaluación en el diseño de experiencia de usuarios.</p>
+
+    <div class="grid-heuristicas">
+
+        <article class="card">
+        <h3>1. Visibilidad del estado del sistema</h3>
+        <p>El usuario siempre debe saber qué está pasando.</p>
+        <p class="ejemplo"><strong>Ejemplo UX:</strong> mostrar "Guardando…" y luego "Guardado" tras enviar un formulario.</p>
+        </article>
+
+        <article class="card">
+        <h3>2. Relación entre sistema y mundo real</h3>
+        <p>Hablar el idioma del usuario, no el del sistema.</p>
+        <p class="ejemplo"><strong>Ejemplo UX:</strong> "Carrito" en vez de "session_cart_items".</p>
+        </article>
+
+        <article class="card">
+        <h3>3. Control y libertad del usuario</h3>
+        <p>El usuario decide cuándo avanzar, volver o cancelar.</p>
+        <p class="ejemplo"><strong>Ejemplo UX:</strong> poder deshacer un borrado o cancelar un pago.</p>
+        </article>
+
+        <article class="card">
+        <h3>4. Consistencia y estándares</h3>
+        <p>Mismos patrones en toda la experiencia.</p>
+        <p class="ejemplo"><strong>Ejemplo UX:</strong> el mismo tipo de confirmación para acciones similares.</p>
+        </article>
+
+        <article class="card">
+        <h3>5. Prevención de errores</h3>
+        <p>Evitar que el error ocurra, no solo avisar después.</p>
+        <p class="ejemplo"><strong>Ejemplo UX:</strong> confirmar antes de eliminar una cuenta.</p>
+        </article>
+
+        <article class="card">
+        <h3>6. Reconocimiento en lugar de recuerdo</h3>
+        <p>Mostrar opciones, no obligar a memorizar.</p>
+        <p class="ejemplo"><strong>Ejemplo UX:</strong> autocompletar direcciones en vez de pedirlas de memoria.</p>
+        </article>
+
+        <article class="card">
+        <h3>7. Flexibilidad y eficiencia</h3>
+        <p>Adaptarse tanto a novatos como a expertos.</p>
+        <p class="ejemplo"><strong>Ejemplo UX:</strong> búsqueda simple para todos + filtros avanzados para quien los quiera.</p>
+        </article>
+
+        <article class="card">
+        <h3>8. Diseño estético y minimalista</h3>
+        <p>Solo la información necesaria en cada momento.</p>
+        <p class="ejemplo"><strong>Ejemplo UX:</strong> un checkout sin campos opcionales que distraigan.</p>
+        </article>
+
+        <article class="card">
+        <h3>9. Ayudar a reconocer y recuperarse de errores</h3>
+        <p>Mensajes claros, en lenguaje humano, con solución.</p>
+        <p class="ejemplo"><strong>Ejemplo UX:</strong> "La contraseña debe tener 8 caracteres" en vez de "Error 422".</p>
+        </article>
+
+        <article class="card">
+        <h3>10. Ayuda y documentación</h3>
+        <p>Facilitar soporte cuando el usuario lo necesita.</p>
+        <p class="ejemplo"><strong>Ejemplo UX:</strong> FAQs, tooltips, centro de ayuda contextual.</p>
+        </article>
+
+    </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-layout"><p>Victor Rivera</p><p>Diseño de UX/UI</p><a href="#contenido">Volver al contenido ↑</a></div>
+    </footer>
+
+<script src="js/tema.js" defer></script>
+
+</body>
+</html>
